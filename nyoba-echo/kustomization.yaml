@@ -4,7 +4,6 @@ kind: Kustomization
 resources:
 - deployment.yaml
 - service.yaml
-- secrets.yaml
 - virtual-service.yaml
 
 namespace: staging
@@ -12,4 +11,4 @@ namespace: staging
 images:
 - name: nyoba-echo
   newName: asia-southeast1-docker.pkg.dev/sandbox-wahyu-anggana/kci-dev/nyoba
-  newTag: e9b2c43
+  newTag: d0abc6b
