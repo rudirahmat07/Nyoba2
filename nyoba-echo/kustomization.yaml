@@ -6,9 +6,9 @@ resources:
 - service.yaml
 - virtual-service.yaml
 
-namespace: staging
+namespace: rudi
 
 images:
 - name: nyoba-echo
   newName: asia-southeast1-docker.pkg.dev/sandbox-wahyu-anggana/kci-dev/nyoba
-  newTag: d0abc6b
+  newTag: 5fe2b68
