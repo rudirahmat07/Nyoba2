@@ -11,4 +11,4 @@ namespace: rudi
 images:
 - name: nyoba-echo
   newName: asia-southeast1-docker.pkg.dev/sandbox-wahyu-anggana/kci-dev/nyoba
-  newTag: e013b3b
+  newTag: f062e89
