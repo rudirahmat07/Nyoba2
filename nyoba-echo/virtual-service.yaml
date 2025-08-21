@@ -1,0 +1,19 @@
+apiVersion: networking.istio.io/v1
+kind: VirtualService
+metadata:
+  name: nyoba-echo
+  namespace: rudi
+spec:
+  hosts:
+    - "nyobaecho.kci.dpdns.org"
+  gateways:
+    - istio-system/apps
+  http:
+    - match:
+        - uri:
+            prefix: /
+      route:
+        - destination:
+            host: nyoba-echo
+            port:
+              number: 80
